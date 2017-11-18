@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Library.fs" />
+    <PackageReference Include="FSharp.Control.AsyncSeq" Version="2.0.16" />
+    <PackageReference Include="Microsoft.Framework.Configuration" Version="1.0.0-beta8" />
+    <PackageReference Include="WindowsAzure.Storage" Version="8.6.0" />
+  </ItemGroup>
+
+</Project>
