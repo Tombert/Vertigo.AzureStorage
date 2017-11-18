@@ -15,4 +15,5 @@ module AzureStorage =
             while true do
                 let! messages = queue.GetMessagesAsync(chunkSize) |> Async.AwaitTask
                 yield messages
+                do! Async.Sleep(pollrate.Milliseconds)
          }
